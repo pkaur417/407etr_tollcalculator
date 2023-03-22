@@ -30,7 +30,18 @@ The JSON Request required on the POST</br>
   <ul>
    <li>In this clas, the method <b>loadInterChangeMap</b> reads the json file and stores the data in the map (interChangesMap).It is made static, so it will be loaded  only one time.
    <li>In the interChangesMap map, the key is the name of the location, and value it the object which contains rest of the data(routeId, distance, tolId).
+   <li>The validation method <b>validateRequest()</b> is validating that the request should not be emplty.
    <li>Using this map, the method calculateTollCost calculates the cost. In this method, two objects of entry and exit locations are created, and using these objects the corresponding distance is fetched.
     <li>Lastly, the using that distance the toll cost is calculated and returned.
   </ul>
 </ul>
+
+<h1><b>Running the Application</b></h1>
+<ol>
+<li>Make a clone of the project using the command.<br>
+$ git clone https://github.com/pkaur417/407etr_tollcalculator.git
+<li>Import the cloned project in IDE.
+<li>Run the application as a springboot application, the TOMCAT will provide the port.
+<li>Open the postman, add the URL(localhost:8080/tollCalculator) and in the POST method, provide the JSON request as mentioned above.
+<li>After clicking the send, the actual response will be displayed.
+</ol>
