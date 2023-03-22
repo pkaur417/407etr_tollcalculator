@@ -42,6 +42,6 @@ The JSON Request required on the POST</br>
 $ git clone https://github.com/pkaur417/407etr_tollcalculator.git
 <li>Import the cloned project in IDE.
 <li>Run the application as a springboot application, the TOMCAT will provide the port.
-<li>Open the postman, add the URL(localhost:8080/tollCalculator) and in the POST method, provide the JSON request as mentioned above.
+<li>Open the postman, add the URL(localhost:8080/tollCalculator)(NOTE: port can vary) and in the POST method, provide the JSON request as mentioned above.
 <li>After clicking the send, the actual response will be displayed.
 </ol>
